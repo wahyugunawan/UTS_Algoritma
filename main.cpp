@@ -3,16 +3,15 @@
 using namespace std;
 
 int main()
-{
-int n,x,t,batas;
- n=64;
- batas = n+100;
- x = 20;
- t = n;
-while(t<=batas){
-    t=t+x;
-    x=x+10;
+{int a,b,x,y;
+cin>>a>>b;
+x=a;
+y=b;
+while (x!=y){
+    if (x<y)
+        x=x+a;
+        else y=y+b;
 }
-cout << t;
-return 0;
+    cout << x;
+    return 0;
 }
